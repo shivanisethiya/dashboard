@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import AccountContainer from "./components/AccountContainer";
+import ProfileContainer from "./components/ProfileContainer";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="container">
+   
+      <div>
+     
+        <h1>My Finance Dashboard</h1>
+        <p style={{ color: "gray", marginTop: "-15px" }}>
+          Welcome to XPay payment portal
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      
+      <div className="App">
+      {/* <div className="background-overlay"></div> */}
+        <ProfileContainer />
+        <AccountContainer />
+      </div>
     </div>
   );
 }
